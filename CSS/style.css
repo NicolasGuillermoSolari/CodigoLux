@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; /* Aplicar la fuente Montserrat */
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Estilo para el header */
+
+/* Estilo para el logo */
+header .container .logo {
+  width: 150px;
+}
+
+header .container nav ul .nav_link:hover {
+  opacity: 0.65;
+}
+/* Agregar una clase específica para el menú de navegación en el encabezado */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+/* Estilo para la clase .container_Nav */
+.container_Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+/* Estilo para la lista de navegación */
+.nav_list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_list li {
+  display: inline;
+  margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+.nav_list li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #8d8b8b;
+  font-weight: bold;
+}
+
+.container1 {
+  text-transform: capitalize;
+  color: #eeecec;
+  background: #8d8b8b;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.container1 h3 {
+  font-size: 1.2rem; /* Reducir el tamaño de la letra del elemento h3 */
+}
+/*hasta aca no cambio*/
+
+.container2 {
+  padding: 8rem;
+}
+
+.container2_3cuadrados {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Establece un ancho máximo para las imágenes dentro de las cajas */
+.container2_3cuadrados .caja8 {
+  flex: 1; /* Hace que todas las cajas tengan el mismo tamaño */
+  max-width: 100%; /* Para que las imágenes no se estiren más allá de su tamaño original */
+  text-align: center; /* Centra el contenido dentro de las cajas */
+}
+
+/* Estilos adicionales para las imágenes */
+.imagen-contenida {
+  max-width: 100%; /* Asegura que las imágenes no se desborden de sus cajas */
+  height: auto; /* Mantiene la proporción de aspecto original de las imágenes */
+}
+
+/* Estilo para la caja */
+.caja1,
+.caja2,
+.caja3,
+.caja8 {
+  width: 12em; /* Ancho de la caja */
+  height: 12em; /* Altura de la caja (ajusta según tu preferencia) */
+  background-color: transparent;
+  border: 3px solid red;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: red;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Estilo para el texto dentro de la caja */
+.palabra_cuadrado1,
+.palabra_cuadrado2,
+.palabra_cuadrado3 {
+  margin: 0;
+  color: red;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ocupa toda la altura de la caja */
+}
+
+/* Estilo para el encabezado */
+.container2 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*variantes caja*/
+
+.caja2 {
+  border: 3px solid green;
+}
+.caja3 {
+  border: 3px solid blue;
+}
+.palabra_cuadrado2 {
+  color: green;
+}
+.palabra_cuadrado3 {
+  color: blue;
+}
+
+.container3 {
+  background-color: yellow;
+}
+
+/*hasta acá bien*/
+
+.footer_intro {
+  background-color: #332f2f;
+}
+
+/*footer*/
+/* styles.css */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+.contact-info {
+  margin-left: 60px;
+  align-self: flex-end; /* Alinea el texto en la parte inferior de la caja izquierda */
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column-reverse; /* Apila los elementos verticalmente */
+  align-items: flex-end; /* Alinea los elementos a la derecha */
+  padding-bottom: 2%;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/*iconos delante de teléfono y mail*/
+.contact-info i {
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+  font-size: 16px; /* Tamaño del ícono (ajusta según sea necesario) */
+}
+
+.icon-phone::before {
+  content: "\f095"; /* Código Unicode del ícono del teléfono (ajusta según sea necesario) */
+  font-family: FontAwesome; /* Usando una fuente de iconos (por ejemplo, FontAwesome) */
+}
+
+.icon-email::before {
+  content: "\f0e0"; /* Código Unicode del ícono de correo electrónico (ajusta según sea necesario) */
+  font-family: FontAwesome; /* Usando una fuente de iconos (por ejemplo, FontAwesome) */
+}
+
+/*tamaño logo*/
+
+footer .left-section img {
+  width: 200px;
+  padding-left: 60px;
+}
+
+/*NEON*/
+.contact-info p,
+.right-section p {
+  font-size: 18px;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Sombra de texto con color verde */
+}
+
+/* Aplicar un efecto de parpadeo */
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 1);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  }
+}
+
+.contact-info p:hover,
+.right-section p:hover {
+  animation: neon 1s infinite; /* Aplicar el efecto de parpadeo en el hover */
+}
+
+/*fondo seccion formulario*/
+.background-section {
+  background-image: url("../imagen/banner\ cl_Mesa\ de\ trabajo\ 1\ copia\ 5.png");
+  background-size: cover; /* Ajusta la imagen al tamaño de la sección */
+  background-position: center; /* Centra la imagen en la sección */
+  color: #fff; /* Color del texto */
+  padding: 40px; /* Espaciado interior para el contenido */
+}
+
+/*ILUMINACION TEXTO*/
+
+.container6 {
+  text-align: center; /* Centra el contenido horizontalmente en el contenedor */
+  background-color: #eeecec;
+}
+
+.caja_textos_grande {
+  max-width: 80%; /* Establece el ancho máximo al 80% */
+  margin: 0 auto; /* Centra el elemento horizontalmente en el contenedor */
+  text-align: left; /* Alinea el texto con el margen izquierdo */
+  color: #332f2f;
+  text-decoration: solid;
+}
+
+.caja_textos_grande p {
+  margin-bottom: 20px; /* Agrega un espacio entre los párrafos para mejorar la legibilidad */
+  color: #332f2f;
+}
+
+.container6 .caja_textos_grande h3 {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.linea {
+  width: 300px;
+  height: 2px;
+  background-color: yellow;
+  margin: 0 auto; /* Centra horizontalmente la línea */
+}
+
+/*catalogo caja*/
+
+.caja8 {
+  width: 300px; /* Ancho de la caja */
+  height: 300px; /* Altura de la caja (ajusta según tu preferencia) */
+  background-color: transparent;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imagen-contenida {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+  object-fit: cover; /* Hace que la imagen se ajuste para llenar el contenedor sin distorsión */
+  object-position: center center; /* Centra la imagen horizontal y verticalmente */
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    padding: 1rem;
+    text-align: center; /* Centra el contenido horizontalmente en la pantalla */
+  }
+  .container2_3cuadrados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 100%; /* Cambia a 100% para ocupar el ancho disponible */
+  }
+
+  .caja1,
+  .caja2,
+  .caja3 {
+    height: 15em;
+    width: 15em;
+    padding: 2em; /* Añade espaciado interno si es necesario */
+    margin: 1.5em;
+    text-align: center; /* Centra el contenido dentro de las cajas */
+  }
+
+  .caja8 {
+    width: 100%;
+  }
+  /* Establece un ancho máximo para las imágenes dentro de las cajas */
+  .caja8 img {
+    width: 100%; /* Porcentaje del ancho de pantalla, puedes ajustarlo según tus necesidades */
+    padding: 2%; /* Añade espaciado interno en porcentaje */
+    text-align: center; /* Centra el contenido dentro de las cajas */
+  }
+  footer {
+    flex-direction: column; /* Cambia la dirección a columna */
+  }
+  /* CSS para left-section */
+  .left-section {
+    align-items: center; /* Alinea los elementos a la izquierda */
+  }
+  /*tamaño logo*/
+
+  footer .left-section img {
+    padding-left: 0px;
+    width: 150px;
+    align-self: center;
+    padding-bottom: 10px;
+  }
+
+  /* CSS para right-section */
+  .right-section {
+    align-items: center; /* Alinea los elementos a la derecha */
+    padding-top: 2%; /* Agrega espacio entre las secciones */
+  }
+  .contact-info {
+    margin-left: 0px;
+    align-self: center;
+  }
+
+  .background-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .background-section .row {
+    width: 100%;
+  }
+
+  .background-section .row > div {
+    width: 100%;
+  }
+
+  .background-section .row > div:first-child {
+    order: 2;
+  }
+  .background-section .row .col-6 .text-center {
+    display: none;
+  }
+}
